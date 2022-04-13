@@ -1,0 +1,9 @@
+The goal of this data sharing plan is to support the **FAIR Data Principles (Findable, Accessible, Interoperable, and Reusable)**. 
+It serves as a general guide and allows the data contributor to describe the data that will be shared and how/when they will be released.
+
+## Commitment to Data Sharing
+
+DHART-SPORE grantees are invited to upload data generated in the performance of research funded by the DHART-SPORE program into a customized [Synapse](https://www.synapse.org/) NF-OSI project as soon as possible after being generated. 
+Data will be embargoed from the public and accessible only to the data contributor and the NF-OSI data curation team at Sage Bionetworks during the award period and until the embargo end date provided in the form below. 
+The embargo period will end earlier if the data is published or at the data contributor’s discretion.  
+After the embargo period, the data will be made available to the broader research community via the Synapse platform.
