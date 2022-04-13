@@ -14,7 +14,9 @@ params:
   fundingAgencyFullName: Children's Tumor Foundation (CTF)
   fundingAgency: CTF
   embargoPeriod: 12 months
-  data: "../tests/example.json"
+  standalone: No
+  formMetaInput: !r list(name = "formFunderVersion", type = "hidden", value = "CTF", form = "dsp")
+  data: "../tests/test.json"
 ---
 
 ```{r setup, echo=FALSE, message=FALSE}
@@ -52,10 +54,14 @@ sections <- "../../sections/"
 :::
 
 ::: {#submit-section}
-**Form Date** `r newInput(DSP$filledDate)`
+**Form Date** `r RIA(DSP$filledDate)`
 
-`r formSubmit(config$Submit)`
+`r formSubmit(DSP$submit)`
 </br>
+We will review and send you a copy of what we have on file, but feel free to use `Ctrl+P` to save a copy now.  
 If any adjustments to this plan need to be made, please email nf-osi@sagebionetworks.org and your `r params$fundingAgency` contact.
+<!--hidden fields for tracking form meta, e.g. versions" -->
+`r RIA(params$formMetaInput)`
+`r RIA(DSP$dspCommonVersion)`
 :::
 
