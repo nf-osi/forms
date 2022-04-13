@@ -1,6 +1,6 @@
 name: "NF-OSI Forms"
 output_dir: "docs"
-exclude: ["R", "tests"]
+exclude: ["R", "tests", "LICENSE"]
 navbar:
   title: "NF-OSI Forms"
   left:
