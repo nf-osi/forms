@@ -57,7 +57,7 @@ function removeRow(btn) {
 function showAddendums() {
   $('input[name="govSA"]').click(function() {
     var val = $(this).attr("value");
-    if (val != 'code1') {   
+    if (val != '1') {   
       document.getElementById("addendum-required").style.display = "block";
       document.getElementById("addendum-1").style.display = "block"; 
       document.getElementById("addendum-2").style.display = "block"; 
@@ -98,7 +98,7 @@ if (window.hljs) {
 
 
 
-<link rel="stylesheet" href="data:text/css,%23checklist%20%7B%0Aposition%3A%20fixed%3B%0Atop%3A%20200px%3B%0Aleft%3A%2030px%3B%0Awidth%3A%20300px%3B%0Aoverflow%3A%20auto%3B%0A%0Abackground%2Dcolor%3A%20lemonchiffon%3B%0Apadding%3A%2015px%3B%0A%7D%0Aselect%20%7B%0Awidth%3A%20230px%3B%0A%7D%0A%0A%2Esubmit%2Dbutton%20%7B%0Acolor%3A%20black%3B%0Abackground%2Dcolor%3A%20mediumspringgreen%3B%20width%3A%20100px%3B%0Apadding%3A%2010px%3B%0Aborder%3A%20none%3B%0Atext%2Dtransform%3A%20uppercase%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Esubmit%2Dbutton%3Ahover%20%7B%0Abox%2Dshadow%3A%200%2012px%2016px%200%20rgba%280%2C0%2C0%2C0%2E24%29%2C%200%2017px%2050px%200%20rgba%280%2C0%2C0%2C0%2E19%29%3B%0A%7D%0A%2Ecompact%20%7B%0Awidth%3A%20120px%0A%7D%0A%23expository%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20gray%3B%0A%0Apadding%3A%2030px%2030px%2030px%2060px%3B%20%7D%0A%23main%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20%234d4dff%3B%0A%0Apadding%3A%2030px%2030px%2030px%2060px%3B%20%7D%0A%23addendum%2Drequired%20%7B%0Abackground%2Dcolor%3A%20lemonchiffon%3B%20padding%3A%2015px%3B%0A%7D%0A%23submit%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20mediumspringgreen%3B%0Apadding%3A%2030px%2030px%2030px%2060px%3B%20%7D%0A%2Eaddendum%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20orange%3B%0A%0Apadding%3A%2020px%2030px%2020px%2060px%3B%20%7D%0A%2Etable%2Dinput%2Dcontainer%20%7B%0Abackground%2Dcolor%3A%20ghostwhite%3B%20width%3A%20110%25%3B%20padding%3A%2025px%3B%0Amargin%2Dbottom%3A%2020px%3B%0A%0A%7D%0A%2Enote%2Dcard%20%7B%0Abox%2Dshadow%3A%200%204px%208px%200%20rgba%280%2C0%2C0%2C0%2E2%29%3B%0Atransition%3A%200%2E3s%3B%0Awidth%3A%2040%25%3B%0A%7D%0A%2Emain%2Dcontainer%20%7B%0Amargin%2Dleft%3A%20300px%3B%0A%7D%0A%2Ewide%2Dtextarea%20%7B%0Awidth%3A%20500px%3B%0Amargin%2Dbottom%3A%2020px%3B%0A%7D%0Atable%20%7B%20border%2Dcollapse%3A%20separate%3B%0Aborder%2Dspacing%3A%208px%3B%0A%7D" type="text/css" />
+<link rel="stylesheet" href="data:text/css,%40media%20print%20%7B%0A%2Enoprint%20%7B%0Avisibility%3A%20hidden%3B%0A%7D%0A%7D%0A%23checklist%20%7B%0Aposition%3A%20fixed%3B%0Atop%3A%20200px%3B%0Aleft%3A%2030px%3B%0Awidth%3A%20250px%3B%0Aoverflow%3A%20auto%3B%0A%0Abackground%2Dcolor%3A%20lemonchiffon%3B%0Apadding%3A%2015px%3B%0A%7D%0Aselect%20%7B%0Awidth%3A%20230px%3B%0A%7D%0Ainline%2Dselect%7B%0Adisplay%3A%20inline%3B%0A%7D%0A%0A%2Esubmit%2Dbutton%20%7B%0Acolor%3A%20black%3B%0Abackground%2Dcolor%3A%20mediumspringgreen%3B%20width%3A%20100px%3B%0Apadding%3A%2010px%3B%0Aborder%3A%20none%3B%0Atext%2Dtransform%3A%20uppercase%3B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0A%2Esubmit%2Dbutton%3Ahover%20%7B%0Abox%2Dshadow%3A%200%2012px%2016px%200%20rgba%280%2C0%2C0%2C0%2E24%29%2C%200%2017px%2050px%200%20rgba%280%2C0%2C0%2C0%2E19%29%3B%0A%7D%0A%2Ecompact%20%7B%0Awidth%3A%20120px%0A%7D%0A%23expository%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20gray%3B%0A%0Apadding%3A%2030px%2030px%2030px%2060px%3B%20%7D%0A%23main%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20%234d4dff%3B%0A%0Apadding%3A%2030px%2030px%2030px%2060px%3B%20%7D%0A%23addendum%2Drequired%20%7B%0Abackground%2Dcolor%3A%20lemonchiffon%3B%20padding%3A%2015px%3B%0A%7D%0A%23submit%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20mediumspringgreen%3B%0Apadding%3A%2030px%2030px%2030px%2060px%3B%20%7D%0A%2Eaddendum%2Dsection%20%7B%0Aborder%2Dleft%3A%205px%20solid%20orange%3B%0A%0Apadding%3A%2020px%2030px%2020px%2060px%3B%20%7D%0A%2Etable%2Dinput%2Dcontainer%20%7B%0Abackground%2Dcolor%3A%20ghostwhite%3B%20width%3A%20fit%2Dcontent%3B%20padding%3A%2025px%3B%0Amargin%2Dbottom%3A%2020px%3B%0A%0A%7D%0A%2Enote%2Dcard%20%7B%0Abox%2Dshadow%3A%200%204px%208px%200%20rgba%280%2C0%2C0%2C0%2E2%29%3B%0Atransition%3A%200%2E3s%3B%0Awidth%3A%2040%25%3B%0Az%2Dindex%3A%20100%3B%0Aposition%3A%20relative%3B%0A%7D%0A%2Emain%2Dcontainer%20%7B%0Amargin%2Dleft%3A%2030%25%3B%0Awidth%3A%2062%25%3B%0A%7D%0A%2Ewide%2Dtextarea%20%7B%0Awidth%3A%20500px%3B%0Amargin%2Dbottom%3A%2020px%3B%0A%7D%0Atable%20%7B%20border%2Dcollapse%3A%20separate%3B%0Aborder%2Dspacing%3A%208px%3B%0A%7D" type="text/css" />
 
 
 
@@ -212,10 +212,12 @@ pre code {
 
 
 <div id="expository-section">
+<!-- the commitment section is NOT the same as for CTF and NTAP -->
 <p>The goal of this data sharing plan is to support the <strong>FAIR Data Principles (Findable, Accessible, Interoperable, and Reusable)</strong>. It serves as a general guide and allows the data contributor to describe the data that will be shared and how/when they will be released.</p>
 <div id="commitment-to-data-sharing" class="section level2">
 <h2>Commitment to Data Sharing</h2>
-<p>Data contributors are required by the Developmental and Hyperactive Ras Tumor (DHART) SPORE to upload data generated in the performance of research funded by or on behalf of DHART-SPORE or one of its affiliates into a customized <a href="https://www.synapse.org/">Synapse</a> NF-OSI project space by the associated progress report deadline, though contributors are encouraged to upload data as soon as possible after being generated. Data will be embargoed from the public and accessible only to the data contributor, the NF-OSI data curation team at Sage Bionetworks, DHART-SPORE staff and consultants, during the award period and for 18 months after the end date of the award, unless your contract with DHART-SPORE states otherwise. The embargo period will end earlier if the data is published or at the data contributor’s discretion. After the embargo period, the data will be made available to the broader research community via the Synapse platform. Any requests by an investigator for an extension of the embargo period (e.g., due to a delay in primary publication), must be made in writing to the DHART-SPORE Project Manager.</p>
+<p>DHART-SPORE grantees are invited to upload data generated in the performance of research funded by the DHART-SPORE program into a customized <a href="https://www.synapse.org/">Synapse</a> NF-OSI project as soon as possible after being generated. Data will be embargoed from the public and accessible only to the data contributor and the NF-OSI data curation team at Sage Bionetworks during the award period and until the embargo end date provided in the form below. The embargo period will end earlier if the data is published or at the data contributor’s discretion.<br />
+After the embargo period, the data will be made available to the broader research community via the Synapse platform.</p>
 </div>
 <div id="data-sharing" class="section level2">
 <h2>Data Sharing</h2>
@@ -224,7 +226,7 @@ pre code {
 <ol style="list-style-type: decimal">
 <li><p>Data and all associated metadata will be uploaded to the contributor’s Synapse NF-OSI project space hosted by Sage Bionetworks.</p></li>
 <li><p>During the embargo period, file metadata will be made publicly visible through the <a href="http://nfdataportal.org/">NF Data Portal</a> to enable discovery of the dataset, pending approval of any institution as may be required under the terms of any applicable funding agreement. The data itself, however, will only be accessible to DHART-SPORE, the Co-PIs of the project, and the Sage NF data curation team via the Synapse platform.</p></li>
-<li><p>Following publication of the data by the data contributor, or otherwise when DHART-SPORE chooses to make such data public in accordance with the terms of the applicable funding agreement (which in no event will be earlier than 18 months following completion of research), the data will be made available to the broader NF research community.</p></li>
+<li><p>Following publication of the data by the data contributor, or otherwise when DHART-SPORE chooses to make such data public in accordance with the terms of the applicable funding agreement (which in no event will be earlier than following completion of research), the data will be made available to the broader NF research community.</p></li>
 </ol>
 </div>
 <div id="data-licensing" class="section level2">
@@ -233,7 +235,7 @@ pre code {
 </div>
 </div>
 <div id="main-section">
-<div id="checklist" class="note-card">
+<div id="checklist" class="note-card noprint">
 <h4>My checklist</h4>
 <div>
 <input type="checkbox" name="Read the overview" class="check-item"></input>
@@ -259,16 +261,32 @@ pre code {
 <div id="project-details" class="section level2">
 <h2>Project Details</h2>
 <!-- include version hidden field -->
-<p><input name="dspCommonVersion" type="hidden" value="DSP_Common_Version_Apr_2022" form="dsp"></input></p>
 <p><strong>Project Title</strong> <input name="projectTitle" id="projectTitle" type="text" size="50" form="dsp"></input></p>
 <p><strong>Project Description</strong></p>
 <div>
 <textarea name="projectDescription" form="dsp" class="wide-textarea"></textarea>
 </div>
+<p><strong>Project Keywords (Disease Focus)</strong></p>
+<select name="projectDiseaseFocus" title="please help us classify your project" type="select" options="Neurofibromatosis type 1 Neurofibromatosis type 2" multiple="TRUE" form="dsp">
+<option value="Neurofibromatosis type 1">Neurofibromatosis type 1</option>
+<option value="Neurofibromatosis type 2">Neurofibromatosis type 2</option>
+</select>
+<p><strong>Project Keywords (Disease Manifestations)</strong></p>
+<select name="projectDiseaseManifestation" title="please help us classify your project" type="select" options=" Cutaneous Neurofibroma Schwannoma Meningioma MPNST Plexiform Neurofibroma Low Grade Glioma" multiple="TRUE" form="dsp">
+<option value></option>
+<option value="Cutaneous Neurofibroma">Cutaneous Neurofibroma</option>
+<option value="Schwannoma">Schwannoma</option>
+<option value="Meningioma">Meningioma</option>
+<option value="MPNST">MPNST</option>
+<option value="Plexiform Neurofibroma">Plexiform Neurofibroma</option>
+<option value="Low Grade Glioma">Low Grade Glioma</option>
+</select>
+<p><strong>Project Grant DOI</strong> <input name="projectGrantDOI" type="text" title="a DOI on e.g. on Proposal Central" form="dsp"></input></p>
 <p><strong>Name of Principal Investigator</strong> <input name="projectPI" type="text" form="dsp"></input></p>
 <p><strong>Email Address of Principal Investigator</strong> <input name="projectPIEmail" type="email" form="dsp"></input></p>
 <p><strong>Name of Point of Contact (Data Coordinator)</strong> <input name="projectPOC" type="text" form="dsp"></input></p>
 <p><strong>Email Address of Point of Contact</strong> <input name="projectPOCEmail" type="email" form="dsp"></input></p>
+<p><strong>Synapse User IDs with Project Admin Access</strong> <input name="projectSynPrincipals" type="text" form="dsp" title="comma-separated for multiple Ids"></input></p>
 <p><strong>Name of Institution</strong> <input name="projectInstitution" type="text" form="dsp"></input></p>
 <p><strong>Project End Date</strong> <input name="projectEndDate" type="date" form="dsp"></input></p>
 </div>
@@ -299,10 +317,10 @@ pre code {
 <tbody>
 <tr>
 <td>
-<input name="depositLabel" display="Label" type="text" form="dsp" title="provide label to be used as repository dataset name" placeholder="e.g. &quot;Cohort1 Sequencing&quot;"></input>
+<input name="depositLabel" display="Label" type="text" form="dsp" title="provide label to be used as repository dataset name" placeholder="e.g. &quot;Sequencing of Cohort1&quot;"></input>
 </td>
 <td>
-<select name="depositAssay" display="Assay" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Assay" form="dsp" title="select specific assay used">
+<select name="depositAssay" display="Assay" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Assay" sort="TRUE" blankstr="TRUE" form="dsp" title="select specific assay used">
 <option value></option>
 <option value="2D AlamarBlue absorbance">2D AlamarBlue absorbance</option>
 <option value="2D AlamarBlue fluorescence">2D AlamarBlue fluorescence</option>
@@ -398,18 +416,17 @@ pre code {
 </td>
 <td>
 <select name="depositSpecies" display="Species" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Species" title="species sampled in assay" form="dsp" class="compact">
-<option value></option>
-<option value="Danio rerio">Danio rerio</option>
-<option value="Drosophila melanogaster">Drosophila melanogaster</option>
-<option value="Gallus gallus">Gallus gallus</option>
 <option value="Homo sapiens">Homo sapiens</option>
 <option value="Mus musculus">Mus musculus</option>
 <option value="Mus musculus (humanized)">Mus musculus (humanized)</option>
-<option value="Oryctolagus cuniculus">Oryctolagus cuniculus</option>
-<option value="Pan troglodytes">Pan troglodytes</option>
 <option value="Rattus norvegicus">Rattus norvegicus</option>
+<option value="Drosophila melanogaster">Drosophila melanogaster</option>
 <option value="Rhesus macaque">Rhesus macaque</option>
+<option value="Pan troglodytes">Pan troglodytes</option>
+<option value="Gallus gallus">Gallus gallus</option>
 <option value="Sus scrofa">Sus scrofa</option>
+<option value="Oryctolagus cuniculus">Oryctolagus cuniculus</option>
+<option value="Danio rerio">Danio rerio</option>
 </select>
 </td>
 <td>
@@ -424,10 +441,10 @@ pre code {
 </tr>
 <tr>
 <td>
-<input name="depositLabel" display="Label" type="text" form="dsp" title="provide label to be used as repository dataset name" placeholder="e.g. &quot;Cohort1 Sequencing&quot;"></input>
+<input name="depositLabel" display="Label" type="text" form="dsp" title="provide label to be used as repository dataset name" placeholder="e.g. &quot;Sequencing of Cohort1&quot;"></input>
 </td>
 <td>
-<select name="depositAssay" display="Assay" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Assay" form="dsp" title="select specific assay used">
+<select name="depositAssay" display="Assay" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Assay" sort="TRUE" blankstr="TRUE" form="dsp" title="select specific assay used">
 <option value></option>
 <option value="2D AlamarBlue absorbance">2D AlamarBlue absorbance</option>
 <option value="2D AlamarBlue fluorescence">2D AlamarBlue fluorescence</option>
@@ -523,18 +540,17 @@ pre code {
 </td>
 <td>
 <select name="depositSpecies" display="Species" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Species" title="species sampled in assay" form="dsp" class="compact">
-<option value></option>
-<option value="Danio rerio">Danio rerio</option>
-<option value="Drosophila melanogaster">Drosophila melanogaster</option>
-<option value="Gallus gallus">Gallus gallus</option>
 <option value="Homo sapiens">Homo sapiens</option>
 <option value="Mus musculus">Mus musculus</option>
 <option value="Mus musculus (humanized)">Mus musculus (humanized)</option>
-<option value="Oryctolagus cuniculus">Oryctolagus cuniculus</option>
-<option value="Pan troglodytes">Pan troglodytes</option>
 <option value="Rattus norvegicus">Rattus norvegicus</option>
+<option value="Drosophila melanogaster">Drosophila melanogaster</option>
 <option value="Rhesus macaque">Rhesus macaque</option>
+<option value="Pan troglodytes">Pan troglodytes</option>
+<option value="Gallus gallus">Gallus gallus</option>
 <option value="Sus scrofa">Sus scrofa</option>
+<option value="Oryctolagus cuniculus">Oryctolagus cuniculus</option>
+<option value="Danio rerio">Danio rerio</option>
 </select>
 </td>
 <td>
@@ -549,10 +565,10 @@ pre code {
 </tr>
 <tr>
 <td>
-<input name="depositLabel" display="Label" type="text" form="dsp" title="provide label to be used as repository dataset name" placeholder="e.g. &quot;Cohort1 Sequencing&quot;"></input>
+<input name="depositLabel" display="Label" type="text" form="dsp" title="provide label to be used as repository dataset name" placeholder="e.g. &quot;Sequencing of Cohort1&quot;"></input>
 </td>
 <td>
-<select name="depositAssay" display="Assay" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Assay" form="dsp" title="select specific assay used">
+<select name="depositAssay" display="Assay" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Assay" sort="TRUE" blankstr="TRUE" form="dsp" title="select specific assay used">
 <option value></option>
 <option value="2D AlamarBlue absorbance">2D AlamarBlue absorbance</option>
 <option value="2D AlamarBlue fluorescence">2D AlamarBlue fluorescence</option>
@@ -648,18 +664,17 @@ pre code {
 </td>
 <td>
 <select name="depositSpecies" display="Species" type="select-schema" schema="https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld" range="Species" title="species sampled in assay" form="dsp" class="compact">
-<option value></option>
-<option value="Danio rerio">Danio rerio</option>
-<option value="Drosophila melanogaster">Drosophila melanogaster</option>
-<option value="Gallus gallus">Gallus gallus</option>
 <option value="Homo sapiens">Homo sapiens</option>
 <option value="Mus musculus">Mus musculus</option>
 <option value="Mus musculus (humanized)">Mus musculus (humanized)</option>
-<option value="Oryctolagus cuniculus">Oryctolagus cuniculus</option>
-<option value="Pan troglodytes">Pan troglodytes</option>
 <option value="Rattus norvegicus">Rattus norvegicus</option>
+<option value="Drosophila melanogaster">Drosophila melanogaster</option>
 <option value="Rhesus macaque">Rhesus macaque</option>
+<option value="Pan troglodytes">Pan troglodytes</option>
+<option value="Gallus gallus">Gallus gallus</option>
 <option value="Sus scrofa">Sus scrofa</option>
+<option value="Oryctolagus cuniculus">Oryctolagus cuniculus</option>
+<option value="Danio rerio">Danio rerio</option>
 </select>
 </td>
 <td>
@@ -677,28 +692,20 @@ pre code {
 </div>
 <button class="add-button" onClick="addRow(&#39;depositTable&#39;)">
 <i class="glyphicon glyphicon-plus"></i>
-row
+entry
 </button>
 </div>
-<!-- New optional DOI service similar DMPTool, incorporation TBD   
-**Publish this data sharing plan with a DOI (Optional) ** 
-
-We can publish this sharing plan with a Digital Object Identifier (DOI) for you, which allows you to cite this document on e.g. another grant or your lab website.
-
-`<input name="publishWithDOI" type="checkbox" form="dsp"/>`{=html} I would like this published with a DOI.
-
--->
 </div>
 <div id="data-sensitivity-assessment" class="section level4">
 <h4>Data Sensitivity Assessment</h4>
 <p><em>Please fill in the following to help us understand the nature of the data and help determine if additional governance forms are needed.</em></p>
 <p>These data:</p>
-<p><input name="govSA" type="radio" value="code1" form="dsp"></input> (1) Are not sensitive (i.e., do not meet any of the criteria below), and can be shared broadly without restriction after the project embargo period ends OR</p>
-<p><input name="govSA" id="govSA" type="radio" value="code2" form="dsp"></input> (2) Are derived from humans OR</p>
-<p><input name="govSA" id="govSA" type="radio" value="code3" form="dsp"></input> (3) Are not derived from humans but for some other reason cannot be shared openly/need to be shared with restrictions on access or data use after the project period ends OR</p>
-<p><input name="govSA" id="govSA" type="radio" value="code4" form="dsp"></input> (4) I am not sure whether these data are sensitive.</p>
+<p><input name="govSA" type="radio" value="1" form="dsp"></input> (1) Are not sensitive (i.e., do not meet any of the criteria below), and can be shared broadly without restriction after the project embargo period ends OR</p>
+<p><input name="govSA" id="govSA" type="radio" value="2" form="dsp"></input> (2) Are derived from humans OR</p>
+<p><input name="govSA" id="govSA" type="radio" value="3" form="dsp"></input> (3) Are not derived from humans but for some other reason cannot be shared openly/need to be shared with restrictions on access or data use after the project period ends OR</p>
+<p><input name="govSA" id="govSA" type="radio" value="4" form="dsp"></input> (4) I am not sure whether these data are sensitive.</p>
 <div id="addendum-required" style="display: none;">
-<p>You indicated possibly sensitive data (selection 2, 3, or 4). Please read <a href="#Addendum-1">Addendum 1</a> and fill out <a href="#Addendum-2">Addendum 2</a> before submitting.</p>
+<p>For possibly sensitive data (selection 2, 3, or 4), please read <a href="#Addendum-1">Addendum 1</a> and fill out <a href="#Addendum-2">Addendum 2</a> as well.</p>
 </div>
 <p><strong>Non-human data only:</strong> Instead of CC0 (default) I would like the data to be licensed as <input name="projectDataLicense" id="govSA" type="text" form="dsp"></input>.</p>
 </div>
@@ -728,73 +735,73 @@ We can publish this sharing plan with a Digital Object Identifier (DOI) for you,
 </div>
 </div>
 <div id="addendum-2" class="addendum-section" style="display: none;">
-<p><input type="hidden" value="Addendum2__Version_Apr_2022" form="dsp"></input></p>
 <div id="Addendum-2" class="section level2">
 <h2>Addendum 2</h2>
 <div id="project-description-and-data-use-conditions" class="section level3">
 <h3>Project Description and Data Use Conditions</h3>
 <p>This addendum should be completed for any data that require restrictions for access after the data embargo period ends.</p>
 <p>Please complete the form below to characterize the data that will be contributed to Synapse and to verify the terms and conditions of data access through the repository.</p>
-<div id="part-a-data-characterization" class="section level4">
-<h4>Part A: Data Characterization</h4>
+</div>
+<div id="part-a-data-characterization" class="section level3">
+<h3>Part A: Data Characterization</h3>
 <p><strong>A.0 Please identify where the specimen/data were obtained:</strong></p>
-<p><input name="govAD2_A0_1" type="checkbox" form="addendum2"></input> Living humans (if so, check here <input name="govAD2_A0_1_check" type="checkbox" form="addendum2"></input> to confirm that you agree to Addendum 1)<br />
-<input name="govAD2_A0_2" type="checkbox" form="addendum2"></input> Deceased humans (if so, check here <input name="govAD2_A0_2_check" type="checkbox" form="addendum2"></input> to confirm that you agree to Addendum 1)<br />
-<input name="govAD2_A0_3" type="checkbox" form="addendum2"></input> Animal model (mice, rats, etc.)<br />
-<input name="govAD2_A0_4" type="checkbox" form="addendum2"></input> In-vitro cell culture<br />
-<input name="govAD2_A0_5" type="checkbox" form="addendum2"></input> Other (please specify): <input name="govAD2_A0_details" type="text" form="addendum2"></input></p>
+<p><input name="govAD2_A0_1" type="checkbox" form="dsp"></input> Living humans (if so, check here <input name="govAD2_A0_1_check" type="checkbox" form="dsp"></input> to confirm that you agree to Addendum 1)<br />
+<input name="govAD2_A0_2" type="checkbox" form="dsp"></input> Deceased humans (if so, check here <input name="govAD2_A0_2_check" type="checkbox" form="dsp"></input> to confirm that you agree to Addendum 1)<br />
+<input name="govAD2_A0_3" type="checkbox" form="dsp"></input> Animal model (mice, rats, etc.)<br />
+<input name="govAD2_A0_4" type="checkbox" form="dsp"></input> In-vitro cell culture<br />
+<input name="govAD2_A0_5" type="checkbox" form="dsp"></input> Other (please specify): <input name="govAD2_A0_details" type="text" form="dsp"></input></p>
 <p>Please complete the following questions if you checked “Living humans” or “Deceased humans”.</p>
 <p><strong>A.1 Is the data being provided to Sage Bionetworks anonymized?</strong><br />
 Anonymization eliminates all personal data and any links between the data and a data subject held by any person anywhere, so that no one could identify the data subjects from the data, either alone or in combination with other information.</p>
-<p><input name="govAD2_A1" type="radio" value="TRUE" form="addendum2"></input> YES, data is anonymized   <input name="govAD2_A1" type="radio" value="FALSE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_A1" type="radio" value="TRUE" form="dsp"></input> YES, data is anonymized   <input name="govAD2_A1" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p><strong>A.2 Is the data being provided to Sage Bionetworks de-identified according to HIPAA?</strong><br />
 De-identification in accordance with HIPAA requires removing all of 18 specific types of identifiers listed at 45 C.F.R. § 164.514(b)(2) or obtaining an expert opinion that the data are de-identified, following the standards set forth at 45 C.F.R. § 164.514(b)(1).</p>
-<p><input name="govAD2_A2" type="radio" value="TRUE" form="addendum2"></input> YES, data is de-identified   <input name="govAD2_A2" type="radio" value="FALSE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_A2" type="radio" value="TRUE" form="dsp"></input> YES, data is de-identified   <input name="govAD2_A2" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p><strong>A.3 Does the human data constitute a Limited Data Set?</strong><br />
 A Limited Data Set is Protected Health Information (PHI) that excludes all identifiers of an individual except for age, dates and geographic information at the zip code, town, city, or state level.</p>
-<p><input name="govAD2_A3" type="radio" value="TRUE" form="addendum2"></input> YES   <input name="govAD2_A3" type="radio" value="FALSE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_A3" type="radio" value="TRUE" form="dsp"></input> YES   <input name="govAD2_A3" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p>If you checked “YES,” please indicate which HIPAA identifiers are included:<br />
-<input name="govAD2_A3_check_age" type="checkbox" form="addendum2"></input> Specific ages<br />
-<input name="govAD2_A3_check_dates" type="checkbox" form="addendum2"></input> Dates<br />
-<input name="govAD2_A3_check_geo" type="checkbox" form="addendum2"></input> Geographic information at the zip code, town, city, or state level</p>
+<input name="govAD2_A3_check_age" type="checkbox" form="dsp"></input> Specific ages<br />
+<input name="govAD2_A3_check_dates" type="checkbox" form="dsp"></input> Dates<br />
+<input name="govAD2_A3_check_geo" type="checkbox" form="dsp"></input> Geographic information at the zip code, town, city, or state level</p>
 <p><strong>A.4 Is the data from a vulnerable population (i.e., children, prisoners, pregnant women)?</strong></p>
-<p><input name="govAD2_A4" type="radio" value="TRUE" form="addendum2"></input> YES   <input name="govAD2_A4" type="radio" value="FALSE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_A4" type="radio" value="TRUE" form="dsp"></input> YES   <input name="govAD2_A4" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p><strong>A.5 Does the data include information about individuals that was collected either from the individuals or others located outside of the United States of America?</strong></p>
-<p><input name="govAD2_A5" type="radio" value="TRUE" form="addendum2"></input> YES   <input name="govAD2_A5" type="radio" value="FALSE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_A5" type="radio" value="TRUE" form="dsp"></input> YES   <input name="govAD2_A5" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p>If YES, please list (1) all countries where the individuals were located at the time of collection (2) all countries where the collector of the data was located at the time of collection, and (3) any applicable laws protecting the privacy of the data (e.g., GDPR):</p>
 <div>
-<textarea name="govAD2_A5_details_geo" form="addendum2" class="wide-textarea"></textarea>
+<textarea name="govAD2_A5_details_geo" form="dsp" class="wide-textarea"></textarea>
 </div>
 </div>
-<div id="part-b" class="section level4">
-<h4>Part B</h4>
+<div id="part-b" class="section level3">
+<h3>Part B</h3>
 <p><strong>B.1 Does the data include omics or sequencing data?</strong></p>
-<p><input name="govAD2_B1" type="radio" value="TRUE" form="addendum2"></input> YES   <input name="govAD2_B2" type="radio" value="TRUE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_B1" type="radio" value="TRUE" form="dsp"></input> YES   <input name="govAD2_B2" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p><strong>B.2 Does the data include raw data (has not undergone data processing)?</strong></p>
-<p><input name="govAD2_B2" type="radio" value="TRUE" form="addendum2"></input> YES   <input name="govAD2_B2" type="radio" value="FALSE" form="addendum2"></input> NO</p>
+<p><input name="govAD2_B2" type="radio" value="TRUE" form="dsp"></input> YES   <input name="govAD2_B2" type="radio" value="FALSE" form="dsp"></input> NO</p>
 <p><strong>Data Use Conditions</strong></p>
 <p>Disposition Requirements upon the termination of (if applicable) a data Transfer Agreement between Sage Bionetworks and the Data Contributor (or equivalent), or expiration of Data Recipient access:</p>
 <div>
-<textarea name="govAD2_Disposition" form="addendum2" class="wide-textarea" placeholder="e.g. Data recipients are required to delete all locally stored Data acquired from Synapse upon conclusion of the research or expiration of Data access."></textarea>
+<textarea name="govAD2_Disposition" form="dsp" class="wide-textarea" placeholder="e.g. Data recipients are required to delete all locally stored Data acquired from Synapse upon conclusion of the research or expiration of Data access."></textarea>
 </div>
 <p>Please list any additional data use limitations as required by contract, institutional policy or any applicable informed consent form (e.g., IRB approval requirement, other project-specific terms of use, etc.):</p>
 <div>
-<textarea name="govAD2_OtherDUC" form="addendum2" class="wide-textarea"></textarea>
+<textarea name="govAD2_OtherDUC" form="dsp" class="wide-textarea"></textarea>
 </div>
 <p>Please indicate any acknowledgement and/or citation statement(s) required for publications resulting from use of the data.</p>
 <div>
-<textarea name="projectAcknowledgement" form="addendum2" class="wide-textarea" placeholder="e.g. The results published here are in whole or in part based on data obtained from the Example Portal ( https://exampleportal.org/ ). These data were generated from X tissue collected through the Y Institute and were provided by Dr. Z.."></textarea>
-</div>
+<textarea name="projectAcknowledgement" form="dsp" class="wide-textarea" placeholder="e.g. The results published here are in whole or in part based on data obtained from the Example Portal ( https://exampleportal.org/ ). These data were generated from X tissue collected through the Y Institute and were provided by Dr. Z.."></textarea>
 </div>
 </div>
 </div>
 </div>
 <div id="submit-section">
-<p><strong>Form Date</strong> <input name="filledDate" id="filled-date" type="date" form="dsp"></input> <!--hidden field for capturing agency" --> <input type="hidden" value="DHART-SPORE" form="dsp"></input></p>
-<form id="dsp" action="https://submit-form.com/vKEUeyiO">
+<p><strong>Form Date</strong> <input name="filledDate" id="filled-date" type="date" form="dsp"></input></p>
+<form id="dsp" method="post" action="https://submit-form.com/vKEUeyiO">
 <button type="submit" class="submit-button">Submit</button>
 </form>
-<p></br> If any adjustments to this plan need to be made, please email <a href="mailto:nf-osi@sagebionetworks.org" class="email">nf-osi@sagebionetworks.org</a> and your DHART-SPORE contact.</p>
+<p></br> We will review and send you a copy of what we have on file, but feel free to use <code>Ctrl+P</code> to save a copy now.<br />
+If any adjustments to this plan need to be made, please email <a href="mailto:nf-osi@sagebionetworks.org" class="email">nf-osi@sagebionetworks.org</a> and your DHART-SPORE contact. <!--hidden fields for tracking form meta, e.g. versions" --> <input name="formFunderVersion" type="hidden" value="DHART-SPORE" form="dsp"></input> <input name="dspCommonVersion" type="hidden" value="DSP_Common_Version_Apr_13_2022" form="dsp"></input></p>
 </div>
 
 <footer>
