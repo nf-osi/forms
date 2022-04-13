@@ -72,7 +72,7 @@ inline-select{
 
 .table-input-container {
   background-color: ghostwhite; 
-  width: 110%; 
+  width: fit-content; 
   padding: 25px;
   margin-bottom: 20px;
   /*  border-bottom: 1px solid darkgray; */
@@ -87,8 +87,8 @@ inline-select{
 }
 
 .main-container {
-  margin-left: 600px;
-  width: 80%;
+  margin-left: 30%;
+  width: 62%;
 }
 
 .wide-textarea {
