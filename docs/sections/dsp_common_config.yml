@@ -1,0 +1,311 @@
+Meta:
+  description: Common input config for collecting info about project and data sharing plan.
+Inputs:
+  dspCommonVersion:
+    name: dspCommonVersion
+    type: hidden
+    value: DSP_Common_Version_Apr_13_2022
+    form: dsp
+  depositTable:
+    id: depositTable
+    name: depositTable
+    type: table-inputs
+    add: Yes
+    inputs:
+      - name: depositLabel
+        display: Label
+        type: text
+        form: dsp
+        title: provide label to be used as repository dataset name
+        placeholder: e.g. "Sequencing of Cohort1"
+      - name: depositAssay
+        display: Assay
+        type: select-schema
+        schema: https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld
+        range: Assay
+        sort: true
+        blankstr: true
+        form: dsp
+        title: select specific assay used
+      - name: depositSamples
+        display: Samples
+        type: number
+        form: dsp
+        size: 6
+        title: number of samples associated with dataset
+      - name: depositSpecies
+        display: Species
+        type: select-schema
+        schema: https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld
+        range: Species
+        title: species sampled in assay
+        form: dsp
+        class: compact
+      - name: depositDeadline
+        display: Upload Deadline
+        type: date
+        form: dsp
+        title: when the data is expected to be completely deposited
+      - name: depositProgressReportNumber
+        display: "Progress Report #"
+        type: number
+        min: 1
+        max: 10
+        size: 5
+        title: progress report number that upload of the data fulfills
+  projectTitle:
+    name: projectTitle
+    id: projectTitle
+    type: text
+    size: 50
+    form: dsp
+  projectDescription:
+    name: projectDescription
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  projectGrantDOI:
+     name: projectGrantDOI
+     type: text
+     title: a DOI on e.g. on Proposal Central
+     form: dsp
+  projectDiseaseFocus:
+    name: projectDiseaseFocus
+    title: please help us classify your project
+    type: select
+    options: ['Neurofibromatosis type 1', 'Neurofibromatosis type 2']
+    multiple: true
+    form: dsp
+  projectDiseaseManifestation:
+    name: projectDiseaseManifestation
+    title: please help us classify your project
+    type: select
+    options: ['', 'Cutaneous Neurofibroma', 'Schwannoma', 'Meningioma', 'MPNST', 'Plexiform Neurofibroma', 'Low Grade Glioma']
+    multiple: true
+    form: dsp
+  projectPI:
+    name: projectPI
+    type: text
+    form: dsp
+  projectPIEmail:
+    name: projectPIEmail
+    type: email
+    form: dsp
+  projectPOC:
+    name: projectPOC
+    type: text
+    form: dsp
+  projectPOCEmail:
+    name: projectPOCEmail
+    type: email
+    form: dsp
+  projectSynPrincipals:
+    name: projectSynPrincipals
+    type: text
+    form: dsp
+    title: comma-separated for multiple Ids
+  projectInstitution:
+    name: projectInstitution
+    type: text
+    form: dsp
+  projectEndDate:
+    name: projectEndDate
+    type: date
+    form: dsp
+  sharingRestriction:
+    name: sharingRestriction
+    type: textarea
+    form: dsp
+  filledDate:
+    name: filledDate
+    id: filled-date
+    type: date
+    form: dsp
+  submit:
+    form: dsp
+    action: https://submit-form.com/vKEUeyiO
+  # Sensitivity Assessment
+  govSA_1:
+    name: govSA
+    type: radio
+    value: 1
+    form: dsp
+  govSA_2:
+    name: govSA
+    id: govSA
+    type: radio
+    value: 2
+    form: dsp
+  govSA_3:
+    name: govSA
+    id: govSA
+    type: radio
+    value: 3
+    form: dsp
+  govSA_4:
+    name: govSA
+    id: govSA
+    type: radio
+    value: 4
+    form: dsp
+  projectDataLicense:
+    name: projectDataLicense
+    id: govSA
+    type: text
+    form: dsp
+  # Addendum 2
+  Addendum2_Version:
+    type: hidden
+    value: Addendum2__Version_Apr_2022
+    form: dsp
+  govAD2_A0_1:
+    name: govAD2_A0_1
+    type: checkbox
+    # value: 1_living_humans
+    form: dsp
+  govAD2_A0_2:
+    name: govAD2_A0_2
+    type: checkbox
+    # value: 2_deceased_humans
+    form: dsp
+  govAD2_A0_3:
+    name: govAD2_A0_3
+    type: checkbox
+    # value: 3_animal_model
+    form: dsp
+  govAD2_A0_4:
+    name: govAD2_A0_4
+    type: checkbox
+    # value: 4_in_vitro_cell
+    form: dsp
+  govAD2_A0_5:
+    name: govAD2_A0_5
+    type: checkbox
+    # value: 5_other
+    form: dsp
+  govAD2_A0_1_check:
+    name: govAD2_A0_1_check
+    type: checkbox
+    form: dsp
+  govAD2_A0_2_check:
+    name: govAD2_A0_2_check
+    type: checkbox
+    form: dsp
+  govAD2_A0_details:
+    name: govAD2_A0_details
+    type: text
+    form: dsp
+  govAD2_A1_Y:
+    name: govAD2_A1
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A1_N:
+    name: govAD2_A1
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A2_Y:
+    name: govAD2_A2
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A2_N:
+    name: govAD2_A2
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A3_Y:
+    name: govAD2_A3
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A3_N:
+    name: govAD2_A3
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A3_check_age:
+    name: govAD2_A3_check_age
+    type: checkbox
+    form: dsp
+  govAD2_A3_check_dates:
+    name: govAD2_A3_check_dates
+    type: checkbox
+    form: dsp
+  govAD2_A3_check_geo:
+    name: govAD2_A3_check_geo
+    type: checkbox
+    form: dsp
+  govAD2_A4_Y:
+    name: govAD2_A4
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A4_N:
+    name: govAD2_A4
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A5_Y:
+    name: govAD2_A5
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A5_N:
+    name: govAD2_A5
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A5_details_geo:
+    name: govAD2_A5_details_geo
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  govAD2_B1_Y:
+    name: govAD2_B1
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_B1_N:
+    name: govAD2_B1
+    type: radio
+    value: N
+    form: dsp
+  govAD2_B2_Y:
+    name: govAD2_B2
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_B2_N:
+    name: govAD2_B2
+    type: radio
+    value: N
+    form: dsp
+  govAD2_Disposition:
+    name: govAD2_Disposition
+    type: textarea
+    class: wide-textarea
+    placeholder: "e.g. Data recipients are required to delete all locally stored Data acquired from Synapse upon conclusion of the research or expiration of Data access."
+    form: dsp
+  govAD2_OtherDUC:
+    name: govAD2_OtherDUC
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  projectAcknowledgement:
+    name: projectAcknowledgement
+    type: textarea
+    class: wide-textarea
+    form: dsp
+    placeholder: "e.g. The results published here are in whole or in part based on data obtained from the Example Portal ( https://exampleportal.org/ ). These data were generated from X tissue collected through the Y Institute and were provided by Dr. Z.."
+
+
+Checklist:
+  items:
+    - name: Read the overview
+    - name: Provide project info & contacts
+    - name: Specify data to be deposited
+    - name: Add governance info as needed
+    - name: Submit this form
+

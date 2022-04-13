@@ -1,0 +1,62 @@
+---
+title: "NF-OSI Data Sharing Plan (GFF-VRI)"
+author: "NF-OSI DCC"
+date: ""
+output:
+  pdf_document: default
+  html_document:
+    includes:
+      in_header: ../../sections/header.html
+      after_body: ../../sections/footer.html 
+    theme: paper
+    css: ../../www/style.css
+params:
+  fundingAgencyFullName: Gilbert Family Foundation (GFF)
+  fundingAgency: GFF
+  embargoPeriod: 12 months
+  standalone: No
+  data: "../tests/example.json"
+---
+
+```{r setup, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+sections <- "../../sections/"
+```
+
+::: {#expository-section}
+```{r child = paste0(sections , 'preamble_commitment_data_sharing.Rmd')}
+```
+
+```{r child = paste0(sections, 'preamble_data_sharing.Rmd')}
+```
+
+```{r child = paste0(sections, 'preamble_data_licensing.Rmd')}
+```
+:::
+
+::: {#main-section }
+```{r child = paste0(sections, 'dsp_common.Rmd')}
+```
+
+```{r child = paste0(sections, 'gov_SA.Rmd')}
+```
+:::
+
+::: {#addendum-1 .addendum-section style="display: none;"}
+```{r child = paste0(sections, 'addendum_1.md')}
+```
+:::
+
+::: {#addendum-2 .addendum-section style="display: none;"}
+```{r child = paste0(sections, 'addendum_2.Rmd')}
+```
+:::
+
+::: {#submit-section}
+**Form Date** `r newInput(DSP$filledDate)`
+
+`r formSubmit(config$Submit)`
+</br>
+If any adjustments to this plan need to be made, please email nf-osi@sagebionetworks.org and your `r params$fundingAgency` contact.
+:::
+

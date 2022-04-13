@@ -1,0 +1,90 @@
+---
+title: "DSP Common"
+author: "NF-OSI DCC"
+date: "4/11/2022"
+output:
+  pdf_document: default
+  html_document:
+    css: "../www/style.css"
+    includes:
+      in_header: header.html
+params:
+  data: "../tests/test.json" # required if rendering to PDF
+---
+
+```{r echo=FALSE, message=FALSE}
+suppressPackageStartupMessages(source(list.files("../R", full.names = T)))
+mode <- knitr::opts_knit$get('rmarkdown.pandoc.to')
+if(mode == "html") {
+  config <- getConfig("dsp_common_config.yml")
+  DSP <- config$Inputs
+  Checklist <- config$Checklist
+  if(!is.null(Checklist)) newChecklist(Checklist)
+} else if(mode == "latex") {
+  DSP <- jsonlite::read_json(params$data)[[1]]$data
+  # special processing for radio buttons
+  DSP[[paste0("govSA_", DSP$govSA)]] <- "TRUE"
+  DSP[[paste0("govAD2_A1_", DSP$govAD2_A1)]] <- "TRUE" 
+  DSP[[paste0("govAD2_A2_", DSP$govAD2_A2)]] <- "TRUE" 
+  DSP[[paste0("govAD2_A3_", DSP$govAD2_A3)]] <- "TRUE" 
+  DSP[[paste0("govAD2_A4_", DSP$govAD2_A4)]] <- "TRUE" 
+  DSP[[paste0("govAD2_A5_", DSP$govAD2_A5)]] <- "TRUE" 
+  DSP[[paste0("govAD2_B1_", DSP$govAD2_B1)]] <- "TRUE" 
+  DSP[[paste0("govAD2_B2_", DSP$govAD2_B2)]] <- "TRUE" 
+  # special processing for table
+  DSP$depositTable <- data.frame(Label = unlist(DSP$depositLabel),
+                                 Assay = unlist(DSP$depositAssay),
+                                 Samples = unlist(DSP$depositSamples),
+                                 Species = unlist(DSP$depositSpecies),
+                                 UploadDeadline = unlist(DSP$depositDeadline))
+}
+```
+
+## Project Details
+
+<!-- include version hidden field -->
+
+**Project Title** `r RIA(DSP$projectTitle)`
+
+**Project Description** `r RIA(DSP$projectDescription)`
+
+**Project Keywords (Disease Focus)** `r RIA(DSP$projectDiseaseFocus)`
+
+**Project Keywords (Disease Manifestations)** `r RIA(DSP$projectDiseaseManifestation)`
+
+**Project Grant DOI** `r RIA(DSP$projectGrantDOI)`
+
+**Name of Principal Investigator** `r RIA(DSP$projectPI)`
+
+**Email Address of Principal Investigator** `r RIA(DSP$projectPIEmail)`
+
+**Name of Point of Contact (Data Coordinator)** `r RIA(DSP$projectPOC)`
+
+**Email Address of Point of Contact** `r RIA(DSP$projectPOCEmail)`
+
+**Synapse User IDs with Project Admin Access** `r RIA(DSP$projectSynPrincipals)`
+
+**Name of Institution** `r RIA(DSP$projectInstitution)`
+
+**Project End Date** `r RIA(DSP$projectEndDate)`
+
+
+## Data Sharing Plan
+
+To help data sharing logistics, please complete the information requested below about the data to be shared.
+The elements of the data-sharing plan are as follows:
+
+- **What**: the nature of the data being shared and how they relate to your overall project, including ‘data type’, ‘assay’ and ‘species’, which are controlled vocabulary terms described here.
+
+- **How much**: how many samples are you measuring? Samples can be considered aliquots/specimens for which you are running a single experiment. If you have multiple experiments, then each gets a separate row in the table below. In the case of single-cell assays, each cell is considered to be a sample.
+
+- **When**: when the data will be uploaded to the embargoed data platform space.
+
+
+<!-- Deposit table starts here -->
+#### Data to be Deposited {#deposits}
+
+`r RIA(DSP$depositTable)`
+
+
+

@@ -1,0 +1,16 @@
+---
+title: "NF-OSI Forms"
+author: "NF-OSI DCC"
+date: ""
+output: 
+  html_document:
+    theme: paper
+---
+
+### Data Sharing Plan forms
+
+- [CTF DSP form](forms/CTF/dsp_ctf.html)
+- [DHART-SPORE DSP form](forms/NTAP/dsp_dhart_spore.html)
+- [GFF-VRI DSP form](forms/NTAP/dsp_gff_vri.html)
+- [GFF-GTI DSP form](forms/NTAP/dsp_gff_gti.html)
+- [NTAP DSP form](forms/NTAP/dsp_ntap.html) + [example filled form](forms/NTAP/dsp_ntap.pdf) 
