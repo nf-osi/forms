@@ -112,6 +112,16 @@ Inputs:
     name: projectEndDate
     type: date
     form: dsp
+  projectEmbargoPeriod:
+    name: projectEmbargoPeriod
+    type: text
+    form: dsp
+    title: embargo period as specified in your agreement
+  projectEmbargoExceptions:
+    name: projectEmbargoExceptions
+    type: text
+    form: dsp
+    title: e.g. people or orgs who may access data during the embargo period 
   sharingRestriction:
     name: sharingRestriction
     type: textarea

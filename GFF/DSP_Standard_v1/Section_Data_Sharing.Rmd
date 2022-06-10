@@ -25,6 +25,6 @@ Data will be shared in three stages:
 
 1. Data and all associated metadata will be uploaded to the contributor’s Synapse `r params$DCC` project space hosted by Sage Bionetworks.
 
-2. During the embargo period, file metadata will be made publicly visible through the [`r params$portalName`](`r params$portalURL`) to enable discovery of the dataset, pending approval of any institution as may be required under the terms of any applicable funding agreement. The data itself, however, will only be accessible to `r params$fundingAgency`, the Co-PIs of the project, and the Sage `r params$community` data curation team via the Synapse platform. 
+2. During the embargo period, file metadata will be made publicly visible through the [`r params$portalName`](`r params$portalURL`) to enable discovery of the dataset, pending approval of any institution as may be required under the terms of any applicable funding agreement. The data itself, however, will only be accessible to `r params$fundingAgency`, the Co-PIs of the project, the Sage `r params$community` data curation team via the Synapse platform, and to any [exceptions](#embargo_details) specified.
 
-3. Following publication of the data by the data contributor, or otherwise when `r params$fundingAgency` chooses to make such data public in accordance with the terms of the applicable funding agreement (which in no event will be earlier than `r params$embargoPeriod` following completion of research), the data will be made available to the broader `r params$community` research community. 
+3. After the embargo period, data will be made available to the broader research community as described in the Data Licensing section below.

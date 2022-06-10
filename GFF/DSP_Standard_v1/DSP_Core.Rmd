@@ -43,8 +43,12 @@ suppressPackageStartupMessages(library(formd))
 
 **Name of Institution** `r RIA(.F$projectInstitution)`
 
-**Project End Date** `r RIA(.F$projectEndDate)`
+**Project End Date** `r RIA(.F$projectEndDate)`  
 
+<a id="embargo_details"></a>
+**Project Embargo Period** `r RIA(.F$projectEmbargoPeriod)`
+
+**Project Embargo Exceptions** `r RIA(.F$projectEmbargoExceptions)`
 
 ## Data Sharing Plan
 
