@@ -1,0 +1,30 @@
+---
+title: "Data Sharing"
+author: "Sage Bionetworks"
+date: "4/11/2022"
+output: html_document
+params:
+  helpDocsLink: https://help.nf.synapse.org/NFdocs/How-to-Format-Your-Data.2110980453.html
+  dccEmail: nf-osi@sagebionetworks.org
+  DCC: NF-OSI
+  portalName: NF Data Portal
+  portalURL: http://nfdataportal.org/
+  fundingAgency: XXX Foundation
+  embargoPeriod: the embargo period
+  community: NF
+---
+
+## Data Sharing
+
+Data contributors should upload the **raw data** from their research to enable the data to be analyzed by a third party. 
+This includes any information necessary to interpret the data, such as a description of the cohort or the model system, experimental protocols, descriptions of study instruments and equipment, and code used to generate processed data. 
+_It is not necessary to share aggregated/finalized results (e.g. figures)._ 
+Please see our [help documentation](`r params$helpDocsLink`) for some data-specific examples and feel free to email us at `r params$dccEmail` with questions or for assistance.
+
+Data will be shared in three stages: 
+
+1. Data and all associated metadata will be uploaded to the contributor’s Synapse `r params$DCC` project space hosted by Sage Bionetworks.
+
+2. During the embargo period, file metadata will be made publicly visible through the [`r params$portalName`](`r params$portalURL`) to enable discovery of the dataset, pending approval of any institution as may be required under the terms of any applicable funding agreement. The data itself, however, will only be accessible to `r params$fundingAgency`, the Co-PIs of the project, and the Sage `r params$community` data curation team via the Synapse platform. 
+
+3. Following publication of the data by the data contributor, or otherwise when `r params$fundingAgency` chooses to make such data public in accordance with the terms of the applicable funding agreement (which in no event will be earlier than `r params$embargoPeriod` following completion of research), the data will be made available to the broader `r params$community` research community. 

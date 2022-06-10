@@ -1,0 +1,128 @@
+Meta:
+  description: Core input config for collecting info about project and data sharing plan.
+Inputs:
+  dspCoreVersion:
+    name: dspCoreVersion
+    type: hidden
+    value: "[DSP_Core_Version_Apr_2022]"
+    form: dsp
+  depositTable:
+    id: depositTable
+    name: depositTable
+    type: table-inputs
+    add: Yes
+    inputs:
+      - name: depositLabel
+        display: Label
+        type: text
+        form: dsp
+        title: provide label to be used as repository dataset name
+        placeholder: e.g. "Sequencing of Cohort1"
+      - name: depositAssay
+        display: Assay
+        type: select-schema
+        schema: https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld
+        range: bts:Assay
+        sort: true
+        blankstr: true
+        form: dsp
+        title: select specific assay used
+      - name: depositSamples
+        display: Samples
+        type: number
+        form: dsp
+        size: 6
+        title: number of samples associated with dataset
+      - name: depositSpecies
+        display: Species
+        type: select-schema
+        schema: https://raw.githubusercontent.com/nf-osi/nf-metadata-dictionary/main/NF.jsonld
+        range: bts:Species
+        title: species sampled in assay
+        form: dsp
+        class: compact
+      - name: depositDeadline
+        display: Upload Deadline
+        type: date
+        form: dsp
+        title: when the data is expected to be completely deposited
+      - name: depositProgressReportNumber
+        display: "Progress Report #"
+        type: number
+        min: 1
+        max: 10
+        size: 5
+        title: progress report number that upload of the data fulfills
+  projectTitle:
+    name: projectTitle
+    id: projectTitle
+    type: text
+    size: 50
+    form: dsp
+  projectDescription:
+    name: projectDescription
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  projectGrantDOI:
+     name: projectGrantDOI
+     type: text
+     title: a DOI on e.g. on Proposal Central
+     form: dsp
+  projectDiseaseFocus:
+    name: projectDiseaseFocus
+    title: please help us classify your project
+    type: select
+    options: ['Neurofibromatosis type 1', 'Neurofibromatosis type 2']
+    multiple: true
+    form: dsp
+  projectDiseaseManifestation:
+    name: projectDiseaseManifestation
+    title: please help us classify your project
+    type: select
+    options: ['', 'Cutaneous Neurofibroma', 'Schwannoma', 'Meningioma', 'MPNST', 'Plexiform Neurofibroma', 'Low Grade Glioma']
+    multiple: true
+    form: dsp
+  projectPI:
+    name: projectPI
+    type: text
+    form: dsp
+  projectPIEmail:
+    name: projectPIEmail
+    type: email
+    form: dsp
+  projectPOC:
+    name: projectPOC
+    type: text
+    form: dsp
+  projectPOCEmail:
+    name: projectPOCEmail
+    type: email
+    form: dsp
+  projectSynPrincipals:
+    name: projectSynPrincipals
+    type: text
+    form: dsp
+    title: comma-separated for multiple Ids
+  projectInstitution:
+    name: projectInstitution
+    type: text
+    form: dsp
+  projectEndDate:
+    name: projectEndDate
+    type: date
+    form: dsp
+  sharingRestriction:
+    name: sharingRestriction
+    type: textarea
+    form: dsp
+  filledDate:
+    name: filledDate
+    id: filled-date
+    type: date
+    form: dsp
+  submit:
+    form: dsp
+    action: https://submit-form.com/vKEUeyiO
+
+
