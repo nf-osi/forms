@@ -1,0 +1,40 @@
+<head>
+
+<script type = "text/javascript">
+
+function addRow(id) {
+  var rtbody = document.getElementById(id).getElementsByTagName('tbody')[0];
+  var clone = rtbody.rows[0].cloneNode(true);
+  rtbody.appendChild(clone);
+}
+  
+function removeRow(btn) {
+  var row = btn.parentNode.parentNode;
+  // don't allow remove if this is the one remaining row
+  var rcount = row.parentNode.rows.length;
+  if(rcount == 1) {
+    alert("We need at least one dataset submission!");
+  } else {
+    row.parentNode.removeChild(row);
+  }
+}
+
+function showAddendums() {
+  $('input[name="govSA"]').click(function() {
+    var val = $(this).attr("value");
+    if (val != '1') {   
+      document.getElementById("addendum-required").style.display = "block";
+      document.getElementById("addendum-1").style.display = "block"; 
+      document.getElementById("addendum-2").style.display = "block"; 
+    } else {
+      document.getElementById("addendum-required").style.display = "none";
+      document.getElementById("addendum-1").style.display = "none";
+      document.getElementById("addendum-2").style.display = "none";
+    }
+  });
+}
+
+$(document).ready(showAddendums);
+
+</script>
+</head>
