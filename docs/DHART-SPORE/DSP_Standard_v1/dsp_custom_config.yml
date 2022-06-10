@@ -1,0 +1,16 @@
+Meta:
+  description: Custom config for assembled form.
+Inputs:
+  formCustomVersion:
+    name: formCustomVersion
+    type: hidden
+    value: "[DHART-SPORE_DSP_Apr_2022]"
+    form: dsp
+
+Checklist:
+  items:
+    - name: Read the overview
+    - name: Provide project info & contacts
+    - name: Specify data to be deposited
+    - name: Add governance info as needed
+    - name: Submit this form

@@ -1,0 +1,147 @@
+# Addendum 2
+Inputs:
+  Addendum2_Version:
+    type: hidden
+    value: Addendum2__Version_Apr_2022
+    form: dsp
+  govAD2_A0_1:
+    name: govAD2_A0_1
+    type: checkbox
+    # value: 1_living_humans
+    form: dsp
+  govAD2_A0_2:
+    name: govAD2_A0_2
+    type: checkbox
+    # value: 2_deceased_humans
+    form: dsp
+  govAD2_A0_3:
+    name: govAD2_A0_3
+    type: checkbox
+    # value: 3_animal_model
+    form: dsp
+  govAD2_A0_4:
+    name: govAD2_A0_4
+    type: checkbox
+    # value: 4_in_vitro_cell
+    form: dsp
+  govAD2_A0_5:
+    name: govAD2_A0_5
+    type: checkbox
+    # value: 5_other
+    form: dsp
+  govAD2_A0_1_check:
+    name: govAD2_A0_1_check
+    type: checkbox
+    form: dsp
+  govAD2_A0_2_check:
+    name: govAD2_A0_2_check
+    type: checkbox
+    form: dsp
+  govAD2_A0_details:
+    name: govAD2_A0_details
+    type: text
+    form: dsp
+  govAD2_A1_Y:
+    name: govAD2_A1
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A1_N:
+    name: govAD2_A1
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A2_Y:
+    name: govAD2_A2
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A2_N:
+    name: govAD2_A2
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A3_Y:
+    name: govAD2_A3
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A3_N:
+    name: govAD2_A3
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A3_check_age:
+    name: govAD2_A3_check_age
+    type: checkbox
+    form: dsp
+  govAD2_A3_check_dates:
+    name: govAD2_A3_check_dates
+    type: checkbox
+    form: dsp
+  govAD2_A3_check_geo:
+    name: govAD2_A3_check_geo
+    type: checkbox
+    form: dsp
+  govAD2_A4_Y:
+    name: govAD2_A4
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A4_N:
+    name: govAD2_A4
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A5_Y:
+    name: govAD2_A5
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_A5_N:
+    name: govAD2_A5
+    type: radio
+    value: N
+    form: dsp
+  govAD2_A5_details_geo:
+    name: govAD2_A5_details_geo
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  govAD2_B1_Y:
+    name: govAD2_B1
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_B1_N:
+    name: govAD2_B1
+    type: radio
+    value: N
+    form: dsp
+  govAD2_B2_Y:
+    name: govAD2_B2
+    type: radio
+    value: Y
+    form: dsp
+  govAD2_B2_N:
+    name: govAD2_B2
+    type: radio
+    value: N
+    form: dsp
+  govAD2_Disposition:
+    name: govAD2_Disposition
+    type: textarea
+    class: wide-textarea
+    placeholder: "e.g. Data recipients are required to delete all locally stored Data acquired from Synapse upon conclusion of the research or expiration of Data access."
+    form: dsp
+  govAD2_OtherDUC:
+    name: govAD2_OtherDUC
+    type: textarea
+    class: wide-textarea
+    form: dsp
+  projectAcknowledgement:
+    name: projectAcknowledgement
+    type: textarea
+    class: wide-textarea
+    form: dsp
+    placeholder: "e.g. The results published here are in whole or in part based on data obtained from the Example Portal ( https://exampleportal.org/ ). These data were generated from X tissue collected through the Y Institute and were provided by Dr. Z.."

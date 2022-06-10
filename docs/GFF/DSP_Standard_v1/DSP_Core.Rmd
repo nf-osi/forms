@@ -1,0 +1,72 @@
+---
+title: "DSP Core"
+author: "Sage Bionetworks"
+date: "4/11/2022"
+output:
+  html_document:
+    css: style.css
+    includes:
+      in_header: header.html
+      in_footer: footer.html
+  pdf_document: default
+params:
+  dsp_core_config: dsp_core_config.yml
+  data: "../../../../../tests/test.json" # required if rendering to PDF
+---
+
+```{r echo=FALSE, message=FALSE}
+suppressPackageStartupMessages(library(formd))
+.F <- formInputContext(params$dsp_core_config, params$data)
+```
+
+## Project Details
+
+**Project Title** `r RIA(.F$projectTitle)`
+
+**Project Description** `r RIA(.F$projectDescription)`
+
+**Project Keywords (Disease Focus)** `r RIA(.F$projectDiseaseFocus)`
+
+**Project Keywords (Disease Manifestations)** `r RIA(.F$projectDiseaseManifestation)`
+
+**Project Grant DOI** `r RIA(.F$projectGrantDOI)`
+
+**Name of Principal Investigator** `r RIA(.F$projectPI)`
+
+**Email Address of Principal Investigator** `r RIA(.F$projectPIEmail)`
+
+**Name of Point of Contact (Data Coordinator)** `r RIA(.F$projectPOC)`
+
+**Email Address of Point of Contact** `r RIA(.F$projectPOCEmail)`
+
+**Synapse User IDs with Project Admin Access** `r RIA(.F$projectSynPrincipals)`
+
+**Name of Institution** `r RIA(.F$projectInstitution)`
+
+**Project End Date** `r RIA(.F$projectEndDate)`  
+
+<a id="embargo_details"></a>
+**Project Embargo Period** `r RIA(.F$projectEmbargoPeriod)`
+
+**Project Embargo Exceptions** `r RIA(.F$projectEmbargoExceptions)`
+
+## Data Sharing Plan
+
+To help data sharing logistics, please complete the information requested below about the data to be shared.
+The elements of the data-sharing plan are as follows:
+
+- **What**: the nature of the data being shared and how they relate to your overall project, including ‘data type’, ‘assay’ and ‘species’, which are controlled vocabulary terms described here.
+
+- **How much**: how many samples are you measuring? Samples can be considered aliquots/specimens for which you are running a single experiment. If you have multiple experiments, then each gets a separate row in the table below. In the case of single-cell assays, each cell is considered to be a sample.
+
+- **When**: when the data will be uploaded to the embargoed data platform space.
+
+
+<!-- Deposit table starts here -->
+#### Data to be Deposited {#deposits}
+
+`r RIA(.F$depositTable)`
+
+
+`r RIA(.F$dspCoreVersion)`
+

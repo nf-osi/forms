@@ -1,0 +1,99 @@
+---
+title: "Addendum 2"
+author: "Sage Bionetworks"
+date: "2022-04-11"
+output: 
+  html_document: default
+params:
+  addendum_2_config: addendum_2_config.yml
+  data: null
+---
+
+```{r echo=FALSE, message=FALSE}
+suppressPackageStartupMessages(library(formd))
+.F <- formInputContext(params$addendum_2_config, params$data)
+```
+
+## Addendum 2 {#Addendum-2}
+
+### Project Description and Data Use Conditions
+
+This addendum should be completed for any data that require restrictions for access after the data embargo period ends. 
+
+Please complete the form below to characterize the data that will be contributed to Synapse and to verify the terms and conditions of data access through the repository.
+
+### Part A: Data Characterization
+
+**A.0 Please identify where the specimen/data were obtained:**
+
+`r RIA(.F$govAD2_A0_1)`  Living humans (if so, check here `r RIA(.F$govAD2_A0_1_check)` to confirm that you agree to Addendum 1)  
+`r RIA(.F$govAD2_A0_2)`  Deceased humans (if so, check here `r RIA(.F$govAD2_A0_2_check)` to confirm that you agree to Addendum 1)  
+`r RIA(.F$govAD2_A0_3)`  Animal model (mice, rats, etc.)  
+`r RIA(.F$govAD2_A0_4)`  In-vitro cell culture  
+`r RIA(.F$govAD2_A0_5)`  Other (please specify): `r RIA(.F$govAD2_A0_details)`  
+
+Please complete the following questions if you checked “Living humans” or “Deceased humans”. 
+
+**A.1 Is the data being provided to Sage Bionetworks anonymized?**   
+Anonymization eliminates all personal data and any links between the data and a data subject held by any person anywhere, so that no one could identify the data subjects from the data, either alone or in combination with other information.   
+
+  `r RIA(.F$govAD2_A1_Y)` YES, data is anonymized &nbsp; `r RIA(.F$govAD2_A1_N)` NO 
+ 
+**A.2 Is the data being provided to Sage Bionetworks de-identified according to HIPAA?**  
+De-identification in accordance with HIPAA requires removing all of 18 specific types of identifiers listed at 45 C.F.R. § 164.514(b)(2) or obtaining an expert opinion that the data are de-identified, following the standards set forth at 45 C.F.R. § 164.514(b)(1).  
+
+  `r RIA(.F$govAD2_A2_Y)` YES, data is de-identified &nbsp; `r RIA(.F$govAD2_A2_N)` NO 
+
+**A.3 Does the human data constitute a Limited Data Set?**   
+A Limited Data Set is Protected Health Information (PHI) that excludes all identifiers of an individual except for age, dates and geographic information at the zip code, town, city, or state level. 
+
+  `r RIA(.F$govAD2_A3_Y)` YES &nbsp; `r RIA(.F$govAD2_A3_N)` NO 
+
+  If you checked “YES,” please indicate which HIPAA identifiers are included:  
+        `r RIA(.F$govAD2_A3_check_age)` Specific ages  
+        `r RIA(.F$govAD2_A3_check_dates)` Dates  
+        `r RIA(.F$govAD2_A3_check_geo)` Geographic information at the zip code, town, city, or state level  
+
+**A.4 Is the data from a vulnerable population (i.e., children, prisoners, pregnant women)?**
+
+  `r RIA(.F$govAD2_A4_Y)` YES &nbsp; `r RIA(.F$govAD2_A4_N)` NO 
+
+**A.5 Does the data include information about individuals that was collected either from the individuals or others located outside of the United States of America?**
+
+  `r RIA(.F$govAD2_A5_Y)` YES &nbsp; `r RIA(.F$govAD2_A5_N)` NO 
+
+If YES, please list (1) all countries where the individuals were located at the time of collection (2) all countries where the collector of the data was located at the time of collection, and (3) any applicable laws protecting the privacy of the data (e.g., GDPR):
+
+  `r RIA(.F$govAD2_A5_details_geo)`
+
+
+### Part B
+
+**B.1 Does the data include omics or sequencing data?**        
+
+  `r RIA(.F$govAD2_B1_Y)` YES &nbsp; `r RIA(.F$govAD2_B2_N)` NO 
+
+**B.2 Does the data include raw data (has not undergone data processing)?** 
+
+  `r RIA(.F$govAD2_B2_Y)` YES &nbsp; `r RIA(.F$govAD2_B2_N)` NO 
+
+**Data Use Conditions**
+
+Disposition Requirements upon the termination of (if applicable) a data Transfer Agreement between Sage Bionetworks and the Data Contributor (or equivalent), or expiration of Data Recipient access:
+
+`r RIA(.F$govAD2_Disposition)`
+
+
+Please list any additional data use limitations as required by contract, institutional policy or any applicable informed consent form (e.g., IRB approval requirement, other project-specific terms of use, etc.):
+
+`r RIA(.F$govAD2_OtherDUC)`
+
+
+Please indicate any acknowledgement and/or citation statement(s) required for publications resulting from use of the data.
+
+`r RIA(.F$projectAcknowledgement)`
+
+
+
+
+

@@ -1,0 +1,32 @@
+ # Sensitivity Assessment
+Meta:
+  description: Config for Sensitivity Assessment section.
+Inputs:
+  govSA_1:
+    name: govSA
+    type: radio
+    value: 1
+    form: dsp
+  govSA_2:
+    name: govSA
+    id: govSA
+    type: radio
+    value: 2
+    form: dsp
+  govSA_3:
+    name: govSA
+    id: govSA
+    type: radio
+    value: 3
+    form: dsp
+  govSA_4:
+    name: govSA
+    id: govSA
+    type: radio
+    value: 4
+    form: dsp
+  projectDataLicense:
+    name: projectDataLicense
+    id: projectDataLicense
+    type: text
+    form: dsp
