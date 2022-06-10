@@ -9,7 +9,11 @@ output:
 
 ### Data Sharing Plan forms
 
-- [CTF DSP form](forms/CTF/dsp_ctf.html)
-- [DHART-SPORE DSP form](forms/DHART-SPORE/dsp_dhart_spore.html)
-- [GFF DSP form](forms/GFF/dsp_gff.html)
-- [NTAP DSP form](forms/NTAP/dsp_ntap.html) + [example filled form](forms/NTAP/dsp_ntap.pdf) 
+Please select the form corresponding to your funding agency.
+
+#### Version 1 (current) 
+- [CTF](CTF/DSP_Standard_v1/DSP_Standard_v1.html)
+- [DHART-SPORE](DHART-SPORE/DSP_Standard_v1/DSP_Standard_v1.html)
+- [GFF](GFF/DSP_Standard_v1/DSP_Standard_v1.html)
+- [NTAP](NTAP/DSP_Standard_v1/DSP_Standard_v1.html)
+
