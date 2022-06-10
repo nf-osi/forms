@@ -1,8 +1,0 @@
-## Data Licensing
-
-Non-human-subjects data will be made publicly available under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/), a [Creative Commons license](https://creativecommons.org/licenses/), by default. 
-This is the equivalent to depositing the data in the public domain. 
-**Please be aware that you may be required to obtain permission from your institution to release data under this Creative Commons license.** 
-**You are responsible for consulting with your institutional contacts and obtaining any required permission.** 
-Contributors may indicate certain Conditions of Use of the data by the broader research community under the Data Sharing Plan section below based on the nature of the data, any applicable informed consent, or prior contractual obligations. 
-
