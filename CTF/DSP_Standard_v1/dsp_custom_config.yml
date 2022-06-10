@@ -4,7 +4,7 @@ Inputs:
   formCustomVersion:
     name: formCustomVersion
     type: hidden
-    value: "[NTAP_DSP_Apr_2022]"
+    value: "[CTF_DSP_Apr_2022]"
     form: dsp
 
 Checklist:
