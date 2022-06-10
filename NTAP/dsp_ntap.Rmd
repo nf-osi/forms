@@ -3,20 +3,20 @@ title: "NF-OSI Data Sharing Plan (NTAP)"
 author: "NF-OSI DCC"
 date: ""
 output:
+  pdf_document: default
   html_document:
     includes:
       in_header: ../../sections/header.html
       after_body: ../../sections/footer.html 
     theme: paper
     css: ../../www/style.css
-  pdf_document: default
 params:
   fundingAgencyFullName: Neurofibromatosis Therapeutic Acceleration Program (NTAP)
   fundingAgency: NTAP
   embargoPeriod: 18 months
   standalone: No
   formMetaInput: !r list(name = "formFunderVersion", type = "hidden", value = "NTAP", form = "dsp")
-  data: "../tests/test.json"
+  data: "../tests/test.json" # if rel path, needs to be relative to sections/dsp_common.Rmd!
 ---
 
 ```{r setup, echo=FALSE, message=FALSE}
