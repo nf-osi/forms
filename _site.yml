@@ -1,6 +1,8 @@
 name: "NF-OSI Forms"
 output_dir: "docs"
-exclude: ["R", "tests", "LICENSE"]
+exclude:
+  - Dockerfile
+  - LICENSE
 navbar:
   title: "NF-OSI Forms"
   left:
