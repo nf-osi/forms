@@ -1,5 +1,5 @@
 ---
-title: "NF-OSI Data Sharing Plan (XXX)"
+title: "NF-OSI Data Sharing Plan (DHART-SPORE)"
 author: "NF-OSI DCC"
 date: ""
 output:
@@ -14,7 +14,7 @@ params:
   # -- DATA -- #
   data: null
   # -- Section_Commitment -- #
-  fundingAgencyFullName: XXX Foundation
+  fundingAgencyFullName: Developmental and Hyperactive Ras Tumor (DHART) SPORE
   DCC: NF-OSI
   embargoPeriod: the embargo period
   # -- Section_Data_Sharing -- #
@@ -23,7 +23,7 @@ params:
   # DCC: NF-OSI # common params already defined with Section_Commitment
   portalName: NF Data Portal
   portalURL: http://nfdataportal.org/
-  fundingAgency: XXX Foundation
+  fundingAgency: DHART-SPORE
   # embargoPeriod: the embargo period # common params already defined
   community: NF
   # -- DSP_Core -- #
